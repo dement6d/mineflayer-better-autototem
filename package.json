@@ -1,6 +1,6 @@
 {
-  "name": "@demented/mineflayer-autototem",
-  "version": "1.0.0",
+  "name": "mineflayer-autototem-plus",
+  "version": "1.0.1",
   "description": "A customizable AutoTotem plugin with useful options for anti-cheat avoidance",
   "main": "index.js",
   "scripts": {
@@ -19,15 +19,8 @@
     "mineflayer-autototem": "file:./"
   },
   "types": "./index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dement6d/mineflayer-autototem.git"
-  },
   "bugs": {
     "url": "https://github.com/dement6d/mineflayer-autototem/issues"
-  },
-  "publishConfig": {
-    "@dement6d:registry": "https://npm.pkg.github.com"
   },
   "homepage": "https://github.com/dement6d/mineflayer-autototem#readme"
 }
