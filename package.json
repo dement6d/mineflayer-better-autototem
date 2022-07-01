@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/dement6d/mineflayer-autototem/issues"
   },
+  "publishConfig": {
+    "@demented:registry": "https://npm.pkg.github.com"
+  },
   "homepage": "https://github.com/dement6d/mineflayer-autototem#readme"
 }
