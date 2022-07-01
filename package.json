@@ -1,0 +1,21 @@
+{
+  "name": "mineflayer-autototem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mineflayer": "^4.3.0",
+    "mineflayer-pathfinder": "^2.2.0",
+    "mineflayer-pvp": "^1.2.1",
+    "prismarine-entity": "^2.1.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
