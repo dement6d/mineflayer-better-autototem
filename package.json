@@ -1,14 +1,14 @@
 {
-  "name": "mineflayer-autototem",
+  "name": "@demented/mineflayer-autototem",
   "version": "1.0.0",
-  "description": "",
+  "description": "A customizable AutoTotem plugin with useful options for anti-cheat avoidance",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "demented",
+  "license": "GPL-3.0",
   "dependencies": {
     "mineflayer": "^4.3.0",
     "mineflayer-pathfinder": "^2.2.0",
@@ -17,5 +17,14 @@
   },
   "devDependencies": {
     "typescript": "^4.7.4"
-  }
+  },
+  "types": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dement6d/mineflayer-autototem.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dement6d/mineflayer-autototem/issues"
+  },
+  "homepage": "https://github.com/dement6d/mineflayer-autototem#readme"
 }
