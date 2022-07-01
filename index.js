@@ -31,7 +31,7 @@ function inject(bot) {
      */
     bot.autoTotem.toggle = function () {
         bot.autoTotem.enabled = !bot.autoTotem.enabled
-        if (bot.autoTotem.debug) console.log('AutoTotem toggled ' + bot.autoTotem.enabled ? "\x1b[0;32mON" : "\x1b[0;31mOFF" + "\x1b[0;37m")
+        if (bot.autoTotem.debug) console.log('AutoTotem toggled ' + (bot.autoTotem.enabled ? "\x1b[0;32mON" : "\x1b[0;31mOFF") + "\x1b[0;37m")
     }
 
     /** 
