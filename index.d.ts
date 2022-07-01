@@ -6,9 +6,11 @@ declare module 'mineflayer-better-autototem' {
     
     export interface AutoTotem {
         enabled: boolean;
+        equipping: readonly boolean;
         whileMoving: boolean;
         stopMovement: boolean;
         stopFighting: boolean;
+        debug: boolean;
         equipAt: number;
         delay: number;
         toggle(): void;
