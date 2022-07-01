@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [ "mineflayer", "minecraft", "autototem", "auto-totem", "mineflayer-autototem", "mineflayer-auto-totem", "minecraft-bot", "bot" ],
   "author": "demented",
   "license": "GPL-3.0",
   "dependencies": {
