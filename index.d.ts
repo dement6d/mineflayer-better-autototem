@@ -1,6 +1,6 @@
 import { Bot } from 'mineflayer'
 
-declare module 'mineflayer-autototem' {
+declare module 'mineflayer-autototem-plus' {
     
     export function autoTotem(bot: Bot): void;
     
