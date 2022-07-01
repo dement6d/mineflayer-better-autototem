@@ -1,12 +1,12 @@
 function inject(bot) {
 
     bot.autoTotem = {}
-    bot.enabled = true
-    bot.whileMoving = true
-    bot.stopMovement = false
-    bot.stopFighting = false
-    bot.equipAt = 14
-    bot.delay = 0
+    bot.autoTotem.enabled = true
+    bot.autoTotem.whileMoving = true
+    bot.autoTotem.stopMovement = false
+    bot.autoTotem.stopFighting = false
+    bot.autoTotem.equipAt = 14
+    bot.autoTotem.delay = 0
 
     /**
      * Disables bot.autoTotem
@@ -36,7 +36,7 @@ function inject(bot) {
         // Equip if enabled, health is low enough and trigger is the bot
         if (!bot.autoTotem.enabled || (entity !== bot.entity)) return
         if (bot.health <= bot.autoTotem.equipAt)
-            bot.autoTotem.equip(autoTotem.delay || 10)
+            bot.autoTotem.equip(bot.autoTotem.delay || 10)
     }
 
     /**
