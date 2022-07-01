@@ -1,14 +1,10 @@
-import { Bot } from "mineflayer"
-import pvp from "mineflayer-pvp"
-import { pathfinder } from "mineflayer-pathfinder"
-import { Entity } from "prismarine-entity"
+import { Bot } from 'mineflayer'
+import pvp from 'mineflayer-pvp'
+import { pathfinder } from 'mineflayer-pathfinder'
+import { Entity } from 'prismarine-entity'
 
 declare module 'mineflayer-autototem' {
-
-    /**
-     * AutoTotem plugin
-     * @param {Bot} bot 
-     */
+    
     export function autoTotem(bot: Bot): void;
     
     export interface AutoTotem {
@@ -23,13 +19,9 @@ declare module 'mineflayer-autototem' {
         enable(): void;
         equip(): void;
     }
-
-    interface Bot {
-        autoTotem: AutoTotem
-    }
 }
 
-declare module 'mineflayer-autototem' {
+declare module 'mineflayer' {
 	interface Bot {
 		autoTotem: AutoTotem
 	}

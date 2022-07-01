@@ -10,13 +10,13 @@
   "author": "demented",
   "license": "GPL-3.0",
   "dependencies": {
-    "mineflayer": "^4.3.0",
     "mineflayer-pathfinder": "^2.2.0",
     "mineflayer-pvp": "^1.2.1",
     "prismarine-entity": "^2.1.1"
   },
   "devDependencies": {
-    "typescript": "^4.7.4"
+    "mineflayer": "^4.3.0",
+    "mineflayer-autototem": "file:./"
   },
   "types": "./index.d.ts",
   "repository": {
