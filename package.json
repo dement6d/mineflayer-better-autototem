@@ -1,5 +1,5 @@
 {
-  "name": "@demented/mineflayer-autototem",
+  "name": "@dement6d/mineflayer-autototem",
   "version": "1.0.0",
   "description": "A customizable AutoTotem plugin with useful options for anti-cheat avoidance",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [ "mineflayer", "minecraft", "autototem", "auto-totem", "mineflayer-autototem", "mineflayer-auto-totem", "minecraft-bot", "bot" ],
-  "author": "demented",
+  "author": "dement6d",
   "license": "GPL-3.0",
   "dependencies": {
     "mineflayer-pathfinder": "^2.2.0",
@@ -27,7 +27,7 @@
     "url": "https://github.com/dement6d/mineflayer-autototem/issues"
   },
   "publishConfig": {
-    "@demented:registry": "https://npm.pkg.github.com"
+    "@dement6d:registry": "https://npm.pkg.github.com"
   },
   "homepage": "https://github.com/dement6d/mineflayer-autototem#readme"
 }
