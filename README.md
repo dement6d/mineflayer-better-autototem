@@ -2,7 +2,7 @@
 A customizable AutoTotem plugin with useful options for anti-cheat avoidance
 
 # Installing
-`npm i mineflayer-autototem-plus`
+`npm i mineflayer-better-autototem`
 
 # Example usage
 ```js
