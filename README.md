@@ -6,7 +6,7 @@ A customizable AutoTotem plugin with useful options for anti-cheat avoidance
 
 # Example usage
 ```js
-const autoTotem = require('mineflayer-autototem-plus');
+const autoTotem = require('mineflayer-better-autototem');
 
 const bot = mineflayer.createBot({
     host: server,
