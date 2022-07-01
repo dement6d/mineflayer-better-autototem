@@ -9,24 +9,24 @@ function inject(bot) {
     bot.delay = 0
 
     /**
-     * Disables AutoTotem
+     * Disables bot.autoTotem
      */
-    autoTotem.disable = function () {
-        autoTotem.enabled = false
+    bot.autoTotem.disable = function () {
+        bot.autoTotem.enabled = false
     }
 
     /**
-     * Enables AutoTotem
+     * Enables bot.autoTotem
      */
-    autoTotem.enable = function () {
-        autoTotem.enabled = true
+    bot.autoTotem.enable = function () {
+        bot.autoTotem.enabled = true
     }
 
     /**
-     * Toggles AutoTotem
+     * Toggles bot.autoTotem
      */
-    autoTotem.toggle = function () {
-        autoTotem.enabled = !autoTotem.enabled
+    bot.autoTotem.toggle = function () {
+        bot.autoTotem.enabled = !bot.autoTotem.enabled
     }
 
     /** 
@@ -34,9 +34,9 @@ function inject(bot) {
     */
     function trigger(entity) {
         // Equip if enabled, health is low enough and trigger is the bot
-        if (!autoTotem.enabled || (entity !== bot.entity)) return
-        if (bot.health <= autoTotem.equipAt)
-            autoTotem.equip(autoTotem.delay || 10)
+        if (!bot.autoTotem.enabled || (entity !== bot.entity)) return
+        if (bot.health <= bot.autoTotem.equipAt)
+            bot.autoTotem.equip(autoTotem.delay || 10)
     }
 
     /**
@@ -46,14 +46,14 @@ function inject(bot) {
      * @param {number=} delay 
      * @returns
      */
-    autoTotem.equip = function (delay) {
+     bot.autoTotem.equip = function (delay) {
         const totem = bot.inventory.findInventoryItem("totem_of_undying")
         const offhandItem = bot.inventory.slots[45]
         if (!totem || (offhandItem && offhandItem.name.includes('totem')))
             return
 
         // If stopMovement = true, Stop moving
-        if (autoTotem.stopMovement) {
+        if (bot.autoTotem.stopMovement) {
             if (bot.pathfinder?.goal) bot.pathfinder?.setGoal(null)
             bot.setControlState('forward', false)
             bot.setControlState('left', false)
@@ -64,11 +64,11 @@ function inject(bot) {
         }
 
         // Stop fighting
-        if (autoTotem.stopFighting && bot.pvp?.target)
+        if (bot.autoTotem.stopFighting && bot.pvp?.target)
             bot.pvp.target = undefined
 
         // If whileMoving = false, Don't equip totem if bot is moving
-        if (!autoTotem.whileMoving) {
+        if (!bot.autoTotem.whileMoving) {
             if (bot.pathfinder?.isMoving())
                 return
             if (bot.getControlState('forward') || bot.getControlState('back') ||
@@ -79,8 +79,8 @@ function inject(bot) {
 
         setTimeout(() => {
             bot.equip(totem, 'off-hand')
-            autoTotem.disable()
-            setTimeout(() => autoTotem.enable(), delay ? delay / 2 : 10)
+            bot.autoTotem.disable()
+            setTimeout(() => bot.autoTotem.enable(), delay ? delay / 2 : 10)
         }, delay || 0)
     }
 
@@ -96,5 +96,5 @@ function inject(bot) {
 }
 
 module.exports = {
-    autoTotem: inject,
+    autoTotem: inject
 }

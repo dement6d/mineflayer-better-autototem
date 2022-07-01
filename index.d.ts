@@ -1,7 +1,4 @@
 import { Bot } from 'mineflayer'
-import pvp from 'mineflayer-pvp'
-import { pathfinder } from 'mineflayer-pathfinder'
-import { Entity } from 'prismarine-entity'
 
 declare module 'mineflayer-autototem' {
     
